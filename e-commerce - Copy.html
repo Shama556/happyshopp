@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappiShop</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+
+    
+    <style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/*``````````````````````````````````````````NAV BAR ````````````````````````````````````````````````*/
+
+
+.logo {
+    width: 90px;
+    height: 90px;
+
+}
+
+
+/* .text {
+    text-align: center;
+    color: #810808;
+}
+#feature{
+    padding: 40px 80px;
+}
+
+#feature .fea{
+    width: 180px;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(255, 40, 40, 0.589);
+}
+
+#feature h6{
+    color: #088178;
+} */
+
+body{
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 80px;
+    background-color: #D8D8D8;
+    box-shadow: 15% 15% 50px rgba(176, 158, 158, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a ;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/*``````````````````````````````````````````MAIN PAGE ````````````````````````````````````````````````*/
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+
+#hero {
+    background-image: url("smiley_shraddha_kapoor_is_standing_in_white_wall_background_hd_girls - copy.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+} 
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: #088178;
+}
+
+#hero button {
+    background-image: url("e-commerce-1/button.png") ;
+    background-color: #f4e0e0;
+    color: #ffffff;
+    border: 2px 2px 2px 2px;
+    border-color: #f4f4f4;
+    padding:  10px 40px 10px 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.6s ease-in-out;
+}
+
+#hero button:hover{
+    background-color: #c02424 ;
+}
+
+
+
+/*``````````````````````````````````````````EXPLORE PAGE ````````````````````````````````````````````````*/
+
+
+.parent{
+    padding: 40px 80px;
+}
+
+.parent{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fea {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 75%;
+    height: 68%;
+}
+
+#feature {
+    padding: 25px 15px;
+    width: 180px;
+    height: 280px;
+    box-shadow: 0 10px 18px 0 rgb(235, 227, 227);
+    transition: 0.3s;
+    border-radius: 4px;
+    margin: 15px 0;
+  }
+
+  #feature:nth-child(2) h6{
+    background-color: #ace9e5;
+  }
+ 
+  #feature:nth-child(3) h6{
+    background-color: #fc808088;
+  }
+ 
+  #feature:nth-child(4) h6{
+    background-color: #acbce9;
+  }
+ 
+  #feature:nth-child(5) h6{
+    background-color: #e9acd9;
+  }
+  #feature:nth-child(6) h6{
+    background-color: #a0e0a2;
+  }
+ 
+  
+ 
+  #feature:hover {
+    box-shadow: 0 8px 16px 0 rgb(207, 207, 207);
+  }
+  
+  h6 {
+    margin-top: 20px;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    text-align: center;
+    font-size: medium;
+    color: #46b1dc;
+    background-color: #fddde4;
+  }
+
+  
+ /*```````````````````````````````````````````FEATURE SECTION ````````````````````````````````````````````````*/
+ 
+ .parent h2{
+    text-align: center;
+    color: #000000;
+    padding-left: 500px;
+ }
+
+ .parent p{
+    text-align: center;
+    color: #bdb8b8;
+    padding-left: 540px;
+ }
+ 
+ #product1 {
+    text-align: center;
+ }
+
+ #product1 .pro{
+    width: 23%;
+    min-width: 260px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(219, 219, 219, 0.202);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+ }
+
+ #product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(219, 219, 219, 0.414);
+ }
+
+ #product1 img{
+    width: 260px;
+    height: 280px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px  #eceaea;
+    /* background-size: cover; */
+ }
+
+ .des {
+    text-align: start;
+    padding: 10px 0;
+ }
+
+ .des span{
+    color: #606063;
+    font-size: 12px;
+ }
+
+ .des h5 {
+    padding: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+ }
+
+ .des i {
+    font-size: 12px;
+    color: #ffdf5e;
+ }
+
+ .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+ }
+
+ #product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+ }
+
+ .pro-container{
+    padding-top: 20px;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+
+ /*<!--    ```````````````````````   BANNER  ``````````````````````````````````` --> */
+
+ .section-m1{
+    margin: 40px 0;
+ }
+
+
+ #banner {
+    text-align: center;
+    background-image: url("modern-banner-background-colorful-bright-purple-gradations-slashes-patterns-abstract-style-free-vector - copy.jpg");
+    width: 100%;
+    height: 40vh; 
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: #ffffff;
+    font-size: 16px;
+    padding-top: 80px;
+}
+
+#banner h2 {
+    color: #ffffff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner span{
+    color: red;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s ease-in;
+}
+
+#banner button:hover{
+    background: #088178;
+    color: #ffffff;
+}
+
+
+
+/*<!--    ```````````````````````   BANNER-2 ``````````````````````````````````` --> */
+
+
+
+
+#banner2 .img1{
+    background-image: url("bannnerr-2.webp");
+    width: 600px;
+    height: 400px;
+}
+
+#banner2 .img2{
+    background-image: url("long-dress-design_1.webp");
+    width: 600px;
+    height: 400px;
+}
+
+#banner2 span{
+    color: #ffffff;
+    font-size: medium;
+    padding-bottom: 10px;
+}
+
+#banner2 button:hover{
+    background: #088178;
+    color: #ffffff;
+}
+
+#banner2 button{
+    margin-top: 20px;
+}
+
+#banner2 .learn:hover {
+   color: #46b1dc;
+} 
+
+#banner2 h3{
+    color: #ffffff;
+    font-size: large;
+}
+
+#banner2 h4{
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: medium;
+    text-align: center;
+}
+
+
+
+/*<!--    ```````````````````````   BANNER-3  ``````````````````````````````````` --> */
+
+
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner3 h3{
+    color: #e11a1a;
+}
+
+ .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 380px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+.banner-box1 {
+    background-image: url("slide_1698998421_2880 - copy.webp");
+    border-radius: 5px;
+}
+
+.banner-box2 {
+ background-image: url("img2.jpg");
+ border-radius: 5px;
+}
+
+.banner-box3 {
+    background-image: url("hhhhhh - copy.png");
+    border-radius: 5px;
+}
+
+#banner3 h2 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+/*<!--    ```````````````````````   NEWSLETTER SECTION  ``````````````````````````````````` --> */
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("abstract-waving-blue-color-gradient-for-banner-and-background-free-vector - copy.jpg");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+#newletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#newsletter h3{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+    padding-top: 15px;
+}
+
+#newsletter h3 span{
+    color: #ffbd27;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+    background-color: #088178;
+    color: #ffffff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+
+/*<!--    ```````````````````````   FOOTER  ``````````````````````````````````` --> */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;  
+    font-weight: 350;
+    font-size: 25px;  
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer span{
+    font-size: 13px;
+    margin-bottom: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-top: 10px;
+}
+
+footer .follow{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install .row{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+   color: #088178;
+}
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+</head> 
+
+<body>
+
+<!--    ```````````````````````NAVBAR ``````````````````````````````````` -->
+
+    <section id="header">
+      <a href="#">
+
+        <img src="Black and Orange Happy Shop Logo.... - Copy.png" class="logo" alt="">
+    
+    <div>
+      <ul id="navbar">
+        <li> <a class="active" href="index.html"> Home </a></li> 
+        <li> <a href="shop.html"> Shop </a></li>
+        <li> <a href="blog.html"> Blog </a></li>
+        <li> <a href="about.html"> About </a></li> 
+        <li> <a href="contact.html"> Contact </a></li>
+        <li> <a href="cart.html">  <i class="fa fa-cart-plus fa-2x"> </i>  </a></li>     
+      </ul>
+    </div>    
+ 
+    </section>
+
+
+<!--    ```````````````````````MAIN PAGE ``````````````````````````````````` -->
+
+    <section id="hero">
+      <h4> Trade-in-Offer</h4>
+      <h2>Super Value Deals </h2>
+      <h1> On all product </h1>
+      <p>Save more with coupons & up to 70% off! </p>
+      <button> Shop Now</button>
+
+    </section>
+   
+   
+   
+<!--    ```````````````````````EXPLORE PAGE ``````````````````````````````````` -->
+
+<div class="parent">
+<div id="feature">
+  <img src="Screenshot 2024-06-24 123250 - Copy.png" alt="" style="width:100%" class="fea">
+  <div class="text">
+    <h6><b>Free Shipping</b></h6> 
+  </div>
+</div>
+<div id="feature">
+  <img src="order online.png" alt="" style="width:100%" class="fea">
+  <div class="text">
+    <h6><b>Online Order</b></h6> 
+  </div>
+</div>
+<div id="feature">
+  <img src="save money - Copy.png" alt="" style="width:100%" class="fea">
+  <div class="text">
+    <h6><b>Save Money</b></h6> 
+  </div>
+</div>
+<div id="feature">
+  <img src="promotion.png" alt="" style="width:100%" class="fea">
+  <div class="text">
+    <h6><b>Promotion</b></h6> 
+  </div>
+</div>
+<div id="feature">
+  <img src="happy sell - Copy.png" alt="" style="width:100%" class="fea">
+  <div class="text">
+    <h6><b>Happy Sell</b></h6> 
+  </div>
+</div>
+<div id="feature">
+  <img src="support - Copy.png" alt="" style="width:100%" class="fea">
+  <div class="text">
+    <h6><b>F24/7 Support</b></h6> 
+  </div>
+</div>
+
+</div>
+
+
+<!--    ``````````````````````` FEATURES PRODUCT  ``````````````````````````````````` -->
+
+<section id="product1"  class="parent">
+    <h2> Feature Product </h2>
+       <p> Summer Collection New Modern Design</p>
+    
+<div class="pro-container">
+       <div class="pro">
+
+           <img src="15 stylish ways to work the embroidery trend - Copy.jpeg" alt=""    width="100%">
+              <div class="des">
+               <span>Adidas</span>
+                 <h5>Cartoon Astrout T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+                  <h4> $50 </h4>
+              </div>
+             <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+      </div>
+
+      <div class="pro">
+
+        <img src="Hawaiian Bowling Shirts for Men Short Sleeve Printed Regular Fit Summer Beach Casual Button Down Aloha Shirts - Copy.jpeg" alt=""  width="100%">
+           <div class="des">
+            <span>Adidas</span>
+              <h5>Cartoon Astrout T-Shirts</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+
+                 </div>
+               <h4> $50 </h4>
+           </div>
+          <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+   </div>
+   <div class="pro">
+
+    <img src="Men Floral Print Shirt Without Tee - Copy.jpeg" alt=""    width="100%">
+       <div class="des">
+        <span>Adidas</span>
+          <h5>Cartoon Astrout T-Shirts</h5>
+             <div class="star">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+
+             </div>
+           <h4> $50 </h4>
+       </div>
+      <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+<div class="pro">
+
+  <img src="Men's Breathable Cotton Floral Embroidered Casual Button-Up Shirt - Black _ 2XL - Copy.jpeg"    width="100%">
+     <div class="des">
+      <span>Adidas</span>
+        <h5>Cartoon Astrout T-Shirts</h5>
+           <div class="star">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+
+           </div>
+         <h4> $50 </h4>
+     </div>
+    <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+<div class="pro">
+
+  <img src="Mens Fashion Color Block Stripe Short Sleeve Casual Shirts - Green _ M - Copy.jpeg" alt=""    width="100%">
+     <div class="des">
+      <span>Adidas</span>
+        <h5>Cartoon Astrout T-Shirts</h5>
+           <div class="star">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+
+           </div>
+         <h4> $50 </h4>
+     </div>
+    <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+
+<div class="pro">
+
+  <img src="Minibee Women's Linen Blouse High Low Shirt Roll-Up Sleeve Tops - Copy.jpeg" alt=""    width="100%">
+     <div class="des">
+      <span>Adidas</span>
+        <h5>Cartoon Astrout T-Shirts</h5>
+           <div class="star">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+
+           </div>
+         <h4> $50 </h4>
+     </div>
+    <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+<div class="pro">
+
+  <img src="img4.jpg" alt=""    width="100%">
+     <div class="des">
+      <span>Adidas</span>
+        <h5>Cartoon Astrout T-Shirts</h5>
+           <div class="star">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+
+           </div>
+         <h4> $50 </h4>
+     </div>
+    <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+<div class="pro">
+
+  <img src="im3.jpg" alt=""    width="100%">
+     <div class="des">
+      <span>Adidas</span>
+        <h5>Cartoon Astrout T-Shirts</h5>
+           <div class="star">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+
+           </div>
+         <h4> $50 </h4>
+     </div>
+    <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+
+
+    </div>
+</section>
+
+
+
+<!--    ```````````````````````   BANNER  ``````````````````````````````````` -->
+
+
+<section  id="banner"  class="section-m1">
+  <h4> Repair Services </h4>
+  <h2> Up to <span> 70% Off </span> - All t-shirt & Accesories</h2>  
+  <button class="normal"> Explor More </button>
+</section>
+
+
+<!--    ```````````````````````   NEW ARRIVAL  ``````````````````````````````````` -->
+
+<section id="product1"  class="parent">
+  <h2> New Arrival </h2>
+     <p> Summer Collection New Modern Design</p>
+  
+<div class="pro-container">
+     <div class="pro">
+
+         <img src="trendy-top-design-mockup-presented-wooden-hanger - Copy.jpg" alt=""    width="100%">
+            <div class="des">
+             <span>Adidas</span>
+               <h5>Cartoon Astrout T-Shirts</h5>
+                  <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+
+                  </div>
+                <h4> $50 </h4>
+            </div>
+           <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+    </div>
+
+    <div class="pro">
+
+      <img src="still-life-with-classic-shirts-hanger - Copy.jpg" alt=""  width="100%">
+         <div class="des">
+          <span>Adidas</span>
+            <h5>Cartoon Astrout T-Shirts</h5>
+               <div class="star">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+
+               </div>
+             <h4> $50 </h4>
+         </div>
+        <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+ </div>
+ <div class="pro">
+
+  <img src="fashionable outfit collection - Copy.jpeg" alt=""    width="100%">
+     <div class="des">
+      <span>Adidas</span>
+        <h5>Cartoon Astrout T-Shirts</h5>
+           <div class="star">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+
+           </div>
+         <h4> $50 </h4>
+     </div>
+    <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+<div class="pro">
+
+<img src="I Just Want to Wear These 8 Comfortable Outfits and Think You'll Love Them Too - Copy.jpeg"    width="100%">
+   <div class="des">
+    <span>Adidas</span>
+      <h5>Cartoon Astrout T-Shirts</h5>
+         <div class="star">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+
+         </div>
+       <h4> $50 </h4>
+   </div>
+  <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+<div class="pro">
+
+<img src="special collection - Copy.jpeg" alt=""    width="100%">
+   <div class="des">
+    <span>Adidas</span>
+      <h5>Cartoon Astrout T-Shirts</h5>
+         <div class="star">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+
+         </div>
+       <h4> $50 </h4>
+   </div>
+  <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+
+<div class="pro">
+
+<img src="7c574a33d384710ef96c8695ddc3acdc - Copy.jpg" alt=""    width="100%">
+   <div class="des">
+    <span>Adidas</span>
+      <h5>Cartoon Astrout T-Shirts</h5>
+         <div class="star">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+
+         </div>
+       <h4> $50 </h4>
+   </div>
+  <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+<div class="pro">
+
+<img src="f61e9770-2f48-470d-915c-1caf57613a3c - Copy.jpeg" alt=""    width="100%">
+   <div class="des">
+    <span>Adidas</span>
+      <h5>Cartoon Astrout T-Shirts</h5>
+         <div class="star">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+
+         </div>
+       <h4> $50 </h4>
+   </div>
+  <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+<div class="pro">
+
+<img src="15 stylish ways to work the embroidery trend - Copy.jpeg" alt=""    width="100%">
+   <div class="des">
+    <span>Adidas</span>
+      <h5>Cartoon Astrout T-Shirts</h5>
+         <div class="star">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+
+         </div>
+       <h4> $50 </h4>
+   </div>
+  <a href="#"> <i class="fas fa-shopping-cart  cart"   >  </i></a>
+</div>
+
+
+
+  </div>
+</section>
+
+<!--    ```````````````````````   BANNER 2  ``````````````````````````````````` -->
+
+<section id="banner2" class="parent">
+     <!-- <div class="banner-box  img1">
+      <span>Crazy deals </span>
+      <h3> Buy One Get One Free </h3>
+      <h4>The best classic dress is on sale at HappyShop </4>
+      <button class="normal Learn"> Learn More</button> 
+     </div> -->
+
+
+     <div class="banner-box img1">
+      <span>spring/summer </span>
+      <h3> Summer Sale</h3>
+      <h4> The best classic dress is on sale at HappyShop </h4>
+      <button class="normal">Learn More</button>
+     </div>
+
+     <div class="banner-box img2">
+      <span>spring/summer </span>
+      <h3> Summer Sale</h3>
+      <h4> The best classic dress is on sale at HappyShop </h4>
+      <button class="normal">Collection</button>
+     </div>
+</section>
+
+
+<!--    ```````````````````````   TEXT BANNER  ``````````````````````````````````` -->
+<section id="banner3" >
+
+  <div class="banner-box banner-box1">
+  <h2> Seasonal Sale </h2>
+  <h3> Winter Collection 50% off </h3>
+  </div>  
+
+  <div class=" banner-box banner-box2">
+    <h2> New Footwear Collection </h2>
+    <h3> Spring/Summer 2024 </h3>
+    </div>  
+
+    <div class="banner-box banner-box3">
+      <h2> T-Shirt </h2>
+      <h3> New Trend Prints </h3>
+      </div>  
+
+</section>
+
+<!--    ```````````````````````   NEWSLETTER  ``````````````````````````````````` -->
+
+<section id="newsletter"  class="parent section-m1">
+   <div class="newstext">
+      <h4>Sign up For Newsletter</h4>
+      <h3>Get E-mail updates about our latest shop and <span>special offers.</span></h3>
+       
+   </div>
+   <div class="form">
+      <input type="text" placeholder="Your email address">
+      <button class="normal">Sign Up</button>
+   </div>
+</section>
+
+<!--    ```````````````````````   FOOTER  ``````````````````````````````````` -->
+
+<footer class="parent">
+   <div class= "col  ">
+     <img class="logo" src="whiteBlack and Orange Happy Shop Logo - Copy.png" alt="">
+     <h4> Contact</h4>
+     <span> <strong> Address: </strong> Iimt Greater Noida Near pari chowk</span> <br>
+     <span><strong> Hours:</strong> 10:00 - 18:00, Mon - Sat</span>
+     <div class="follow">
+       <h4> follow us</h4>
+         <div class="icon">
+           <i class="fab fa-facebook"></i>
+           <i class="fab fa-twitter"></i> 
+           <i class="fab fa-instagram"></i> 
+           <i class="fab fa-pinterest-p"></i>
+           <i class="fab fa-youtube"></i>
+      </div>
+     </div>
+    </div>
+   
+   <div class="col " >
+      <h4> About </h4>
+      <a href="#"> About us</a>
+      <a href="#"> Delivery Information</a>
+      <a href="#"> Privacy Policy</a>
+      <a href="#"> Terms & Conditions</a>
+      <a href="#"> Contact Us</a>
+   </div>
+
+   <div class="col ">
+    <h4> About </h4>
+    <a href="#"> My Account</a>
+    <a href="#"> Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#"> My Wishlist </a>
+    <a href="#"> Track My Order </a>
+    <a href="#"> Help</a>
+   </div>
+ 
+<div class="col install">
+  <h4>Install Apps</h4>
+  <span>From App Store or Google Play</span>
+  
+     <img class="row"  src="google-play-badge.png" alt="" width="10%">
+     <img class="row" src="images - Copy.png" alt="" width="10%">
+  
+  <span> Secured Payment Gateways </span>
+  <img src="download.png" alt="" width="10%">
+</div>
+
+
+</footer>
+
+
+</body>
+</html>
